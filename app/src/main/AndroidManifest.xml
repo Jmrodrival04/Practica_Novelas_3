@@ -3,10 +3,11 @@
 
     <!-- Permisos que puedas necesitar -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -23,12 +24,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Actividad para agregar novelas (AddNovelActivity) -->
+        <!-- Otras actividades de la aplicación -->
         <activity android:name=".AddNovelActivity" />
-
-        <!-- Actividad para detalles de novela (NovelDetailActivity) -->
         <activity android:name=".NovelDetailActivity" />
-
+        <activity android:name=".SettingsActivity" />
     </application>
 
 </manifest>
