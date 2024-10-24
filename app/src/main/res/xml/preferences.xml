@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="Modo Oscuro"
+        android:defaultValue="false"
+        android:summary="Activa el modo oscuro en la aplicación" />
+
+    <SwitchPreferenceCompat
+        android:key="backup_automatic"
+        android:title="Copia de Seguridad Automática"
+        android:defaultValue="false"
+        android:summary="Realiza copias de seguridad de tus novelas automáticamente" />
+
+</PreferenceScreen>
